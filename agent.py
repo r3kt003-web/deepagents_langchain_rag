@@ -1,5 +1,3 @@
-"""DeepAgent configuration for multi-agent LangChain documentation RAG."""
-
 import os
 from dotenv import load_dotenv
 from deepagents import create_deep_agent
