@@ -20,18 +20,14 @@ A production-grade Retrieval-Augmented Generation (RAG) assistant powered by Goo
 
 ---
 
-## 🛠️ Supported File Formats
+## Supported File Formats
 
-| Format | Extension | Processing Engine | Security Checks |
-|---|---|---|---|
-| PDF | `.pdf` | `pypdf` | `%PDF-` magic header, encryption check, max 100 pages |
-| Word Document | `.docx` | `python-docx` | `PK\x03\x04` zip header check, table & text extraction |
-| Plain Text | `.txt` | Safe UTF-8/Latin-1 | Null byte check, binary signature blocking |
-| Markdown | `.md` | Safe UTF-8/Latin-1 | Null byte check, binary signature blocking |
-| Tabular Data | `.csv` | Python `csv.reader` | Row limits (max 2,500 rows), structured markdown tables |
+| Format        | Extension | Processing Engine   | Security Checks                                         |
+| ------------- | --------- | ------------------- | ------------------------------------------------------- |
+| PDF           | `.pdf`    | `pypdf`             | `%PDF-` magic header, encryption check, max 100 pages   |
+| Word Document | `.docx`   | `python-docx`       | `PK\x03\x04` zip header check, table & text extraction  |
+| Plain Text    | `.txt`    | Safe UTF-8/Latin-1  | Null byte check, binary signature blocking              |
+| Markdown      | `.md`     | Safe UTF-8/Latin-1  | Null byte check, binary signature blocking              |
+| Tabular Data  | `.csv`    | Python `csv.reader` | Row limits (max 2,500 rows), structured markdown tables |
 
 ---
-
-
-
-
