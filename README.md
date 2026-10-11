@@ -32,29 +32,6 @@ A production-grade Retrieval-Augmented Generation (RAG) assistant powered by Goo
 
 ---
 
-## 🏃 Getting Started
 
-### 1. Prerequisites
-- Python 3.13+
-- [`uv`](https://docs.astral.sh/uv/) package manager
 
-### 2. Environment Setup
-Configure your Google Gemini API key in a `.env` file:
-```bash
-GEMINI_API_KEY=your_gemini_api_key_here
-```
 
-### 3. Launch the Streamlit Web Application
-```bash
-uv run streamlit run main.py
-```
-
-### 4. CLI Mode (Optional)
-Run queries directly from the command line:
-```bash
-# Query official documentation
-uv run python main.py --cli "How do i stream intermediate tool results from a subagent"
-
-# Query an uploaded document
-uv run python main.py --cli "What are the main findings?" --doc "path/to/my_document.pdf"
-```
